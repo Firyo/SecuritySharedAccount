@@ -11,8 +11,6 @@ hook.Add("PlayerInitialSpawn", "Firyo:Security:SharedFamilyCheck", function(ply)
     local licenseOwnerSteam64 = ply:OwnerSteamID64()
     local licenseOwnerSteamID = util.SteamIDFrom64(licenseOwnerSteam64)
 
-    print(ply)
-
     if (ply:SteamID64() ~= licenseOwnerSteam64 ) then
         ply:ConCommand("say @" .. ply:Nick() .. "[" .. ply:SteamID() .. "] : " .. FiryoSecurity.Config.Texts.PlayerConnected)
 
