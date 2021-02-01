@@ -1,0 +1,2 @@
+FiryoSecurity = {}
+FiryoSecurity.Config = {}
